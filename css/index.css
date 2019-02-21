@@ -1,0 +1,919 @@
+@import url("./base.css");
+/*默认样式*/
+.topBar{
+    height: 40px;
+    background: #333333;
+}
+.content{
+    width: 1226px;
+    height: 100%;
+    margin: 0 auto;
+}
+.barNav{
+    /*width: 667px;*/
+    height: 100%;
+    float: left;
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 40px;
+}
+.barNav a,.barInfo a{
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.barNav a:hover,.barInfo a:hover{
+    color: #ffffff;
+}
+.barCart{
+    /*width: 120px;*/
+    height: 100%;
+    float: right;
+    font-size: 12px;
+    background: #424242;
+    line-height: 40px;
+    text-align: center;
+}
+.barCart a{
+    display: block;
+    color: #b0b0b0;
+    padding: 0 0 0 5px;
+}
+.barCart a:hover{
+    color: #ff6700;
+    background: #ffffff;
+
+}
+.sercherWords{
+    position: absolute;
+    top: 75px;
+    right: 120px;
+    text-align: right;
+    font-size: 12px;
+}
+.sercherWords a{
+    background:#eee ;
+    line-height: 21px;
+    padding: 0 5px;
+}
+.sercherWords a:hover{
+    color: #ffffff;
+    background: #ff6700;
+}
+.barInfo{
+    /*width: 142px;*/
+    height: 100%;
+    float: right;
+    line-height: 40px;
+    font-size: 12px;
+    color: #b0b0b0;
+    padding: 0 10px;
+}
+/*topbar*/
+.header{
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+}
+.header a img{
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin: 22px 0;
+    margin-right: 179px;
+}
+.headerCenter{
+    height: 100px;
+    line-height: 100px;
+    color: #333333;
+}
+.headerCenter span{
+    margin: 0 10px;
+}
+.headerCenter a:hover{
+    color: #ff6700;
+}
+.sercher a{
+    float: right;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    margin-top: 22px;
+    text-align: center;
+    line-height: 48px;
+}
+.sercher a:hover{
+    background: #ff6700;
+    color: #ffffff;
+}
+.sercherText{
+    float: right;
+    width: 223px;
+    height: 48px;
+    border: 1px solid #e0e0e0;
+    padding: 0 10px;
+    font-size: 14px;
+    margin-top: 22px;
+}
+/*header*/
+.fixed{
+    height: 157px;
+    width: 25px;
+    position: fixed;
+    right: 35px;
+    top: 370px;
+    text-align: center;
+    background: #ffffff;
+}
+.fixedRight{
+    width: 25px;
+    height: 39px;
+    border: 1px solid #f5f5f5;
+    line-height: 39px;
+    font-size: 20px;
+    color: #757575;
+}
+.fixedRight a:hover{
+    color: #ff6700;
+}
+/*固定*/
+.banner{
+    height: 460px;
+    position: relative;
+    background: #0064ff;
+}
+.imgBox{
+    width: 100%;
+    height: 100%;
+}
+.imgBox li,.imgBox li a,.imgBox li a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.imgBox li{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ul.aslide{
+    width: 234px;
+    height: 420px;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    padding: 20px 0;
+}
+.aslideList{
+    width: 100%;
+    height: 42px;
+}
+.aslideList a{
+    display: block;
+    width: 174px;
+    padding: 0 30px;
+    font-size: 14px;
+    line-height: 42px;
+    color: #ffffff;
+}
+.aslideList a:hover{
+    background: #ff6700;
+}
+.aslideList a i{
+    float: right;
+    font-size: 14px;
+}
+/*左右键*/
+.buttonYou a i,.buttonZuo a i{
+    font-size: 30px;
+}
+.buttonZuo a{
+    display: block;
+    width: 41px;
+    height: 69px;
+    z-index: 999;
+    color: #ffffff;
+    text-align: center;
+    line-height: 69px;
+    position: absolute;
+    left: 234px;
+    top: 195px;
+    border-radius: 3px;
+}
+.buttonYou a{
+    display: block;
+    width: 41px;
+    height: 69px;
+    z-index: 999;
+    color: #ffffff;
+    text-align: center;
+    line-height: 69px;
+    position: absolute;
+    right: 0;
+    top: 195px;
+    border-radius: 3px;
+}
+.buttonZuo a:hover,.buttonYou a:hover{
+    background: rgba(0,0,0,0.5);
+}
+/*banner*/
+.bannerNext{
+    margin-top: 14px;
+    margin-bottom: 26px;
+    height: 170px;
+}
+ul.bannerNextLeft{
+    float: left;
+    width: 228px;
+    height: 164px;
+    padding: 3px;
+    background: #333333;
+    margin-right: 2px;
+}
+.leftContent{
+    width: 76px;
+    height: 62px;
+    text-align: center;
+    padding: 10px 0;
+    float: left;
+}
+.leftContent a i{
+    font-size: 24px;
+    color: rgba(255,255,255,0.7);
+}
+.leftContent a p{
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+}
+.leftContent a:hover i,.leftContent a:hover p{
+    color: #ffffff;
+    /*transition: .5s;*/
+}
+.bannerNextRight a img{
+    display: block;
+    height: 170px;
+    width: 316px;
+    margin-left: 14px;
+    float: left;
+}
+.bannerNextRight img:hover{
+    box-shadow: 0 5px 10px rgba(176, 176, 176, 0.62);
+    transition: all 1s;
+}
+/*bannerNext*/
+.micontent{
+    height: 598px;
+}
+.shopping{
+    height:58px ;
+}
+.shopping h2{
+    font-weight: 200;
+    font-size: 22px;
+    color: #333333;
+    line-height: 58px;
+    float: left;
+}
+.shopping .jiantouLeft{
+    width: 34px;
+    height: 23px;
+    float: right;
+    border: 1px solid #e0e0e0;
+    line-height: 23px;
+    text-align: center;
+    color: #e0e0e0;
+    margin-top: 23px;
+}
+.shopping .jiantouRight{
+    width: 33px;
+    height: 23px;
+    float: right;
+    border: 1px solid #e0e0e0;
+    border-left: 0;
+    line-height: 23px;
+    text-align: center;
+    color: #b0b0b0;
+    margin-top: 23px;
+}
+.jiantouRight a:hover{
+    color: #ff6700;
+}
+.sgPicture{
+    width: 234px;
+    height: 339px;
+    border-top: 1px solid #e53935;
+    background: #f1eded;
+    text-align: center;
+    float: left;
+    display: inline-block;
+}
+.timeTitle{
+    font-size: 21px;
+    color: #ef3a3b;
+    height: 31px;
+    line-height: 31px;
+    text-align: center;
+    width: 100%;
+    margin-top: 55px;
+}
+.sgPicture img{
+    margin: 25px auto;
+}
+.sgPicture .sub{
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    /*text-align: center;*/
+    color: rgba(0,0,0,0.54);
+    font-size: 15px;
+}
+ul.countDown{
+    width: 168px;
+    height: 46px;
+    margin-top: 28px;
+    padding: 0 33px;
+}
+.countDown li{
+    display: inline;
+}
+.time{
+     float: left;
+     width: 46px;
+     height: 46px;
+     background: #605751;
+     line-height: 46px;
+     font-size: 22px;
+     color: #ffffff;
+
+}
+.dosh{
+     float: left;
+     width: 15px;
+     height: 46px;
+     line-height: 46px;
+}
+.sgContent{
+    float: left;
+    margin-left: 14px;
+     width: 234px;
+     height: 339px;
+     border-top: 1px solid #ffac13;
+     background: #fafafa;
+ }
+.sgContent h3{
+    font-weight: 400;
+    color: #212121;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+}
+.sgContent p{
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 18px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.price span{
+    color: #ff6709;
+    font-size: 14px;
+    text-align: center;
+    margin-right: 5px;
+}
+.price del{
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.mitu{
+    border-top-color: #83c44e;
+}
+.huyao{
+    border-top-color: #2196f3;
+  }
+.jimu{
+    border-top-color: #e53935;
+  }
+.heisha img{
+    float: left;
+    width: 100%;
+    height: 120px;
+    margin: 40px 0;
+}
+/*小米闪购*/
+.gray{
+    height: 1412px;
+    background: #ffffff;
+}
+/*白背景*/
+.iphoneContent,.jiadianContent{
+    height: 886px;
+}
+.lookAll{
+    line-height: 58px;
+    float: right;
+    color: #424242;
+}
+.lookAll a i{
+    color: #b0b0b0;
+    margin-left: 10px;
+}
+.lookAll a:hover,.lookAll a:hover i{
+    color: #ff6700;
+}
+.iphone{
+    height: 58px;
+    float: left;
+}
+.iphone h2{
+    font-weight: 200;
+    font-size: 22px;
+    color: #333333;
+    line-height: 58px;
+    float: left;
+}
+.iphoneLeft img{
+    float: left;
+    width: 234px;
+    height: 614px;
+}
+.iphoneRight{
+    float: left;
+    width: 992px;
+}
+.xioami8,.xioami8SE{
+    width: 234px;
+    height: 280px;
+    padding-bottom: 20px;
+    margin-bottom: 14px;
+    margin-left: 14px;
+    text-align: center;
+    float: left;
+    position: relative;
+    background: #ffffff;
+    overflow: hidden;
+}
+/*浮现效果*/
+.xioami8:hover,.xioami8SE:hover,.iphoneLeft img:hover,.jiadianLeft img:hover,.shangpin:hover,.gengduo:hover,.remenInfo:hover,.videoInfo:hover{
+    box-shadow: 0 1px 10px  #b0b0b0;
+    transition: all 1s;
+    transform: translateY(-3px);
+}
+.xioami8 .top{
+    width: 64px;
+    height: 20px;
+    background: #83c44e;
+    text-align: center;
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 12px;
+    position: absolute;
+    left: 85px;
+}
+.picture img{
+    width: 160px;
+    height: 160px;
+    margin: 20px auto 18px;
+}
+.picture h3{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+ .zhushi{
+    font-size: 12px;
+    color: #b0b0b0;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px 10px;
+}
+.picture .price{
+    color: #ff6700;
+    font-size: 14px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    margin: 0 10px 14px;
+}
+.xioami8SE .Top{
+    width: 64px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 12px;
+    position: absolute;
+    left: 85px;
+    background: #e53935;
+}
+.price del{
+    text-decoration: line-through;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+.xiaomiTV img{
+    float: left;
+    width: 100%;
+    height: 120px;
+    margin: 40px 0;
+}
+/*手机*/
+.jiadianLeft img{
+    width: 234px;
+    height: 300px;
+    float: left;
+    margin-bottom: 14px;
+}
+.Picture img{
+    width: 150px;
+    height: 150px;
+    margin: 20px auto 18px;
+}
+.Picture h3{
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px;
+}
+.Picture .price del{
+    text-decoration: line-through;
+    color: #b0b0b0;
+    font-size: 14px;
+}
+.shangpin{
+    width:214px ;
+    height: 113px;
+    padding-right: 20px;
+    padding-top: 30px;
+    margin-bottom: 14px;
+    margin-left: 14px;
+    float: left;
+    background: #ffffff;
+}
+.shangpin img{
+    width: 80px;
+    height: 80px;
+    float: right;
+}
+.shangpin h3{
+    font-weight: 400;
+    font-size: 14px;
+    width: 94px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 10px 0 10px 30px;
+    float: left;
+}
+.shangpin .price{
+    margin-left: 30px;
+    color: #ff6700;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+}
+.gengduo{
+    width:174px ;
+    height: 49px;
+    padding: 47px 30px;
+    margin-bottom: 14px;
+    margin-left: 14px;
+    float: left;
+    background: #ffffff;
+}
+.gengduo p{
+    font-size: 18px;
+}
+.gengduo span{
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.gengduo i{
+    font-size: 48px;
+    float: right;
+    margin-top: -10px;
+    color: #ff6700;
+}
+.menu{
+    float: right;
+}
+.menu li{
+    display: inline;
+    height: 24px;
+    border-bottom: 2px solid #f5f5f5;
+    margin-left: 20px;
+    padding-bottom: 5px;
+    margin-top: 15px
+}
+.menu a li{
+    display: inline-block;
+    margin-top: 10px;
+}
+.menu a:hover li{
+    color: #ff6700;
+    border-bottom-color: #ff6700;
+}
+/*家电*/
+.tuijian{
+    height: 372px;
+}
+/*为你推荐*/
+.remen{
+    height: 487px;
+}
+.remenInfo{
+    width: 296px;
+    height: 415px;
+    margin-bottom: 14px;
+    background: #ffffff;
+    margin-left: 14px;
+    float: left;
+    position: relative;
+}
+.leftClick{
+    width: 20px;
+    height: 24px;
+    padding: 12px 0;
+    position: absolute;
+    left: 0;
+    top: 190px;
+    background: #ffffff;
+}
+.rightClick{
+    width: 20px;
+    height: 24px;
+    padding: 12px 0;
+    position: absolute;
+    right: 0;
+    top: 190px;
+    background: #ffffff;
+    /*background: rgba(66,66,66,0.2);*/
+}
+.remenInfo:hover .leftClick{
+    background: rgba(66,66,66,0.2);
+    transition: all 1s;
+}
+.remenInfo:hover .rightClick{
+    background: rgba(66,66,66,0.2);
+    transition: all 1s;
+}
+.leftClick a i,.rightClick a i{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.remenInfo:hover .leftClick:hover,.remenInfo:hover .rightClick:hover{
+    background: #b0b0b0;
+    transition: all 1s;
+}
+.remenImg img{
+    display: block;
+    height: 220px;
+    margin-bottom: 30px;
+}
+.remen a p{
+    width: 240px;
+    height: 72px;
+    font-weight: 400;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 30px  10px;
+}
+.laiyuan{
+    font-size: 12px;
+    color: #b0b0b0;
+    width: 230px;
+    height: 18px;
+}
+/*热门产品*/
+.neirong{
+    height: 492px;
+}
+
+.hali{
+    width: 296px;
+    height: 374px;
+    padding-top: 45px;
+    border-top: 1px solid #ffac13;
+    margin-left: 14px;
+    text-align: center;
+}
+.hali h2{
+    font-weight: 400;
+    text-align: center;
+    color: #ff6700;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+.hali h4{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+    height: 25px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+.hali img{
+    width: 216px;
+    height: 154px;
+}
+.hali p{
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 20px;
+    text-align: center;
+    padding: 0  48px 10px;
+    margin-top: 5px;
+}
+.pagers{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+.pageUl{
+    width: 110px;
+    height: 100%;
+    margin: 0 auto;
+}
+.pagers .list-pager{
+    width: 10px;
+    height: 10px;
+    padding: 10px;
+    margin: 0 2px;
+    float: left;
+}
+.pagers .page-active{
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #f5f5f5;
+    border-radius: 6px;
+    text-align: left;
+    /*text-indent: -9999em;*/
+    overflow: hidden;
+}
+.page-noHover{
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 2px solid #f5f5f5;
+    border-radius: 6px;
+    text-align: left;
+    background: #b0b0b0;
+}
+.pagers .page-active:hover{
+    background: #ffac13;
+}
+/*内容*/
+.video{
+    height: 357px;
+    margin-bottom: 60px;
+
+}
+.videoTop{
+    width: 100%;
+    height: 180px;
+}
+.videoInfo{
+    width: 296px;
+    height: 285px;
+    margin-bottom: 14px;
+    margin-left: 14px;
+    background: #ffffff;
+    float: left;
+    position: relative;
+}
+.videoInfo .play{
+    position: absolute;
+    left: 20px;
+    top: 145px;
+    width: 32px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #ffffff;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.6);;
+}
+.play i{
+    margin-left: 4px;
+}
+/*.play:hover{
+    background: #ff6700;
+    border-color: #ff6700;
+}*/
+
+.videoInfo img{
+    display: block;
+    height: 180px;
+    margin-bottom: 20px;
+}
+.videoInfo p{
+    text-align: center;
+}
+.videoInfo p a:hover{
+    color: #ff6700;
+}
+.videoTop:hover .play{
+    background: #ff6700;
+    border-color: #ff6700;
+    transition: all 0.05s;
+}
+/*视频*/
+.footer{
+    height: 272px;
+    background: #ffffff;
+}
+.service{
+    height: 79px;
+    line-height: 80px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #616161;
+}
+.service li {
+    width: 230px;
+    text-align: center;
+    display: inline-block;
+}
+.service a:hover, .links a:hover,.one a:hover{
+    color: #ff6700;
+}
+.footerLink{
+    height: 112px;
+    padding: 40px 0;
+}
+.links{
+    float: left;
+    width: 160px;
+    height: 112px;
+    font-size: 14px;
+}
+.links .list-links{
+    margin-top: 10px;
+    font-size: 12px;
+}
+.list-links a{
+    color: #757575;
+}
+.footerButtom{
+    height: 172px;
+    padding: 30px 0;
+}
+.one{
+    height: 119px;
+}
+.one img{
+    display: inline-block;
+    float: left;
+}
+.two{
+    font-size: 12px;
+    color: #b0b0b0;
+}
+.three{
+    height: 28px;
+    width: 100%;
+    margin-top: 5px;
+}
+.three img{
+    display: inline-block;
+    height: 28px;
+    width: 85px;
+    margin-right: 8px;
+}
+.four{
+    width: 252px;height: 112px;
+    text-align: center;
+    border-left: 1px solid #b5b5b5;
+     float: right
+}
+.five a{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    border: 1px solid #ff6700;
+    color: #ff6700;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 6px;
+}
+.five a:hover{
+    color: #ffffff;
+    background: #ff6700;
+}
+.hover:hover{
+    color: #ff6700;
+}
