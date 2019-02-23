@@ -17,6 +17,7 @@
     color: #b0b0b0;
     line-height: 40px;
 }
+
 .barNav a,.barInfo a{
     font-size: 12px;
     color: #b0b0b0;
@@ -78,8 +79,8 @@
     float: left;
     width: 55px;
     height: 55px;
-    margin: 22px 0;
-    margin-right: 179px;
+    margin: 22px 179px 22px 0;
+    /*margin-right: 179px;*/
 }
 .headerCenter{
     height: 100px;
@@ -142,19 +143,78 @@
     position: relative;
     background: #0064ff;
 }
-.imgBox{
-    width: 100%;
-    height: 100%;
+#imgBox{
+    width: 1226px;
+    height: 460px;
 }
-.imgBox li,.imgBox li a,.imgBox li a img{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-.imgBox li{
+
+#imgBox>li{
+    width: 1226px;
+    height: 460px;
     position: absolute;
     left: 0;
     top: 0;
+    transition: all 0.8s;
+    opacity: 0.6;
+}
+#imgBox>li.active{
+    z-index: 1;
+    opacity: 1;
+}
+#imgBox>li>a{
+    display: block;
+    width: 1226px;
+    height: 460px;
+}
+#imgBox>li>a>img{
+    width: 1226px;
+    height: 460px;
+    display: block;
+}
+#pagerBox{
+    width: 100px;
+    height: 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-around;
+}
+#pagerBox li{
+    width: 6px;
+    height: 6px;
+    background: #757575;
+    border: 2px solid rgba(0,0,0,0.3);
+    border-radius: 50%;
+}
+#pagerBox>li.active{
+    border:2px solid rgba(0,0,0,0.4);
+    background: #ffffff;
+}
+.slides{
+    width: 40px;
+    height: 69px;
+    background-image: url("../images/icon-slides.png");
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 999;
+}
+#pre{
+    left: 233px;
+    background-position: -83px 0;
+}
+#pre:hover{
+    background-position: 1px 0;
+}
+#next{
+    right: 0;
+    background-position: -125px 0;
+}
+#next:hover{
+    background-position: -43px 0;
 }
 ul.aslide{
     width: 234px;
@@ -456,7 +516,7 @@ ul.countDown{
 }
 /*浮现效果*/
 .xioami8:hover,.xioami8SE:hover,.iphoneLeft img:hover,.jiadianLeft img:hover,.shangpin:hover,.gengduo:hover,.remenInfo:hover,.videoInfo:hover{
-    box-shadow: 0 1px 10px  #b0b0b0;
+    box-shadow: 0 3px 10px  #dedede;
     transition: all 1s;
     transform: translateY(-3px);
 }
@@ -916,4 +976,31 @@ ul.countDown{
 }
 .hover:hover{
     color: #ff6700;
+}
+/*加Javascript*/
+.barNav .ewmTop{
+    width: 124px;
+    position: absolute;
+    top: 50px;
+    left: 43%;
+    padding: 18px 0px 14px;
+    background: rgb(255, 255, 255);
+    margin-left: -55px;
+    box-shadow: rgb(170, 170, 170) 0px 1px 5px;
+    /*display: none;*/
+    z-index: 9999;
+}
+.barNav .ewmTop .xiaomi{
+    display: block;
+    font-size: 14px;
+    color: #333;
+    line-height:1;
+    margin-top:14px;
+    text-align: center
+}
+.barNav .ewmTop>img{
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
 }
